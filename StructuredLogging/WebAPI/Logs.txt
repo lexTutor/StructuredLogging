@@ -1,0 +1,9 @@
+2021-09-18 12:17:44.330 +01:00 [INF] Application starting up
+2021-09-18 18:04:34.683 +01:00 [INF] Application starting up
+2021-09-18 18:44:09.344 +01:00 [INF] Application starting up
+2021-09-18 18:44:34.671 +01:00 [INF] Application starting up
+2021-09-18 18:45:21.775 +01:00 [INF] Application starting up
+2021-09-18 18:45:53.263 +01:00 [INF] Application starting up
+2021-09-18 18:46:13.081 +01:00 [ERR] Error at index
+System.ArgumentOutOfRangeException: Specified argument was out of the range of valid values. (Parameter 'We only deal with 1's')
+   at WebAPI.Controllers.HomeController.Index(Int32 value) in C:\LexRepos\ArticleRepositories\StructuredLogging\StructuredLogging\WebAPI\Controllers\HomeController.cs:line 24
