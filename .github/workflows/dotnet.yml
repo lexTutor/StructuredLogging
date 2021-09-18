@@ -12,6 +12,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Deploy structured logs api
+      working-directory: ./StructuredLogging/StructuredLogging/WebAPI
       env: 
         HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
         APP_NAME: ${{ 'structured-logging' }}
