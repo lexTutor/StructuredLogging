@@ -20,9 +20,9 @@ namespace WebAPI
             var isDevelopment = environment == Environments.Development;
 
             IConfiguration config = ConfigurationSetUp.GetConfig(isDevelopment);
-
+            Console.WriteLine(config["RavenDBConfigurations:DatabaseName"]);
             LogSettings.SetupSerilog(config);
-
+            Console.WriteLine(Environment.GetEnvironmentVariable("RavenDBConfigurations:DatabaseName"));
 
             try
             {

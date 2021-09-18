@@ -11,7 +11,6 @@ namespace WebAPI
     {
         public static IConfiguration GetConfig(bool isDevelopment)
         {
-            Console.WriteLine(isDevelopment);
             return isDevelopment ? new ConfigurationBuilder()
                   .SetBasePath(Directory.GetCurrentDirectory())
                   .AddJsonFile("appsettings.json")
