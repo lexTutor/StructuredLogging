@@ -20,6 +20,6 @@ RUN dotnet publish "WebAPI.csproj" -c Release -o /app/publish
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
-COPY --from=publish ./StructuredLogging/WebAPI/MonitorLogs.pfx .
+COPY --from=publish /StructuredLogging/WebAPI/MonitorLogs.pfx .
 #ENTRYPOINT ["dotnet", "WebAPI.dll"]
 CMD ASPNETCORE_URLS=http://*:$PORT dotnet WebAPI.dll
