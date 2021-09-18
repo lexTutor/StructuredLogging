@@ -31,7 +31,7 @@ namespace WebAPI
             }
             catch (Exception e)
             {
-                Log.Logger.Fatal(e, "The application failed to start correctly");
+                Log.Logger.Fatal(e, "The application failed to start correctly successfully");
             }
             finally
             {
