@@ -20,8 +20,6 @@ namespace WebAPI
             var isDevelopment = environment == Environments.Development;
 
             IConfiguration config = ConfigurationSetUp.GetConfig(isDevelopment);
-            
-            Console.WriteLine(config["RavenDBConfigurations:ConnectionURL"]);
             LogSettings.SetupSerilog(config);
 
             try
