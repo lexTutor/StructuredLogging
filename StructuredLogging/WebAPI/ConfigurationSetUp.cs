@@ -17,7 +17,7 @@ namespace WebAPI
                   .Build()
             :
              new ConfigurationBuilder()
-                    .AddEnvironmentVariables()
+                    .AddEnvironmentVariables(prefix: "RavenDBConfigurations")
                   .Build();
 
         }

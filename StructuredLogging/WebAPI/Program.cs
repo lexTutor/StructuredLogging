@@ -20,9 +20,6 @@ namespace WebAPI
             var isDevelopment = environment == Environments.Development;
 
             IConfiguration config = ConfigurationSetUp.GetConfig(isDevelopment);
-            Console.WriteLine(config["Certificate"]);
-            Console.WriteLine(Environment.GetEnvironmentVariable("Certificate"));
-            Console.WriteLine("here");
             LogSettings.SetupSerilog(config);
 
             try
